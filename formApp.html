@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulář nákupu</title>
+    <link rel="stylesheet" href="style-form.css" type="text/css" />
+    <script src="js/form.js"></script>
+
+</head>
+<body>
+<form id="mainForm">
+    <p>Pro správné fungování aplikace je nutné si aktivovat dočasný přístup k CORS Anywhere: <a href="https://cors-anywhere.herokuapp.com/corsdemo">ZDE</a></p>
+    <h1>Formulář nákupu</h1>
+    <p><label for="nameBox">Jméno uživatele: </label><input id="nameBox" type="text" required/></p>
+    <p><label for="productBox">Název výrobku: </label><input id="productBox" type="text" required/></p>
+    <p><label for="priceBox">Cena výrobku: </label><input id="priceBox" type="number" min="1" required/></p>
+    <p><label for="countBox">Počet kusů: </label><input id="countBox" type="number" min="1" required/></p>
+    <p id="fullPrice">Celková cena: </p>
+    <button id="confirmButton" type="button">Potvrď objednávku</button>
+</form>
+</body>
+</html>
